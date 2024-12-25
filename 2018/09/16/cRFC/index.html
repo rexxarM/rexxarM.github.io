@@ -3,8 +3,8 @@
   <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-  <meta name="description" content="Miehanav Studio">
-  <meta name="keyword" content="AppStore, cRFC, circulo, colordiff, triumvirate, Miehanav">
+  <meta name="description" content="yanm1ng&#39;s blog">
+  <meta name="keyword" content="hexo-theme, vuejs">
   
     <link rel="shortcut icon" href="/css/images/logo.png">
   
@@ -13,16 +13,22 @@
       cRFC | Miehanav Studio
     
   </title>
-  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
-  <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/css/plugins/gitment.css">
-  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-  <script src="//cdn.bootcss.com/geopattern/1.2.3/js/geopattern.min.js"></script>
-  <script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
-  <script src="/js/qrious.js"></script>
-<script src="/js/gitment.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
+  
+    
+<script src="/js/qrious.js"></script>
+
+  
+  
   
   
     <!-- MathJax support START -->
@@ -44,16 +50,21 @@
         }
       });
     </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <!-- MathJax support END -->
   
 
 
-</head>
+  
+  
+    
+<script src="/js/local-search.js"></script>
+
+
+<meta name="generator" content="Hexo 6.3.0"></head>
 <div class="wechat-share">
   <img src="/css/images/logo.png" />
 </div>
-
   <body>
     <header class="header fixed-header">
   <div class="header-container">
@@ -71,6 +82,12 @@
       
         <li class="list-item">
           
+            <a href="/series/" class="item-link">Series</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
             <a href="/tags/" class="item-link">Tags</a>
           
         </li>
@@ -83,9 +100,22 @@
       
         <li class="list-item">
           
+            <a href="/project/" class="item-link">Projects</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
             <a href="/about/" class="item-link">About</a>
           
         </li>
+      
+      
+        <li class="menu-item menu-item-search right-list">
+    <a role="button" class="popup-trigger">
+        <i class="fa fa-search fa-fw"></i>
+    </a>
+</li>
       
     </ul>
     <div class="menu">
@@ -104,6 +134,12 @@
         
           <li class="menu-item">
             
+              <a href="/series/" class="menu-link">Series</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
               <a href="/tags/" class="menu-link">Tags</a>
             
           </li>
@@ -116,12 +152,42 @@
         
           <li class="menu-item">
             
+              <a href="/project/" class="menu-link">Projects</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
               <a href="/about/" class="menu-link">About</a>
             
           </li>
         
       </ul>
     </div>
+    
+      <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+            <span class="search-icon">
+                <i class="fa fa-search"></i>
+            </span>
+            <div class="search-input-container">
+                <input autocomplete="off" autocapitalize="off"
+                    placeholder="Please enter your keyword(s) to search." spellcheck="false"
+                    type="search" class="search-input">
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa fa-times-circle"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+    
   </div>
 </header>
 
@@ -135,7 +201,7 @@
 <main class="app-body flex-box">
   <!-- Article START -->
   <article class="post-article">
-    <section class="markdown-content"><h1 id="cRFC"><a href="#cRFC" class="headerlink" title="cRFC"></a>cRFC</h1><p>No need any network connection, with all RFC documents after downloaded. Documents included from RFC1 to the latest RFC8401, as there is much knowledge value, for everyone IT professionals. Available in <a href="https://itunes.apple.com/app/apple-store/id1433771145?pt=118464847&amp;ct=hexo_page&amp;mt=8" target="_blank" rel="noopener">AppStore</a> now.</p>
+    <section class="markdown-content"><h1 id="cRFC"><a href="#cRFC" class="headerlink" title="cRFC"></a>cRFC</h1><p>No need any network connection, with all RFC documents after downloaded. Documents included from RFC1 to the latest RFC8401, as there is much knowledge value, for everyone IT professionals. Available in <a target="_blank" rel="noopener" href="https://itunes.apple.com/app/apple-store/id1433771145?pt=118464847&amp;ct=hexo_page&amp;mt=8">AppStore</a> now.</p>
 <h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><p>Smooth operation, easy to understand, and focused on the reading experience.</p>
 <p>Support full-text searching keyword in current RFC.</p>
 <p>Support searching keyword in all RFC documents index.</p>
@@ -175,9 +241,9 @@
       </a>
     
     
-      <a class="nav-right" href="/2020/05/18/User-Term/">
+      <a class="nav-right" href="/2024/12/24/rebirth-in-miehanav/">
         
-          Mienahav Studio Terms of Use
+          Rebirth:Miehanav
         
         <span class="nav-arrow"> →</span>
       </a>
@@ -187,12 +253,42 @@
     <!-- NAV END -->
     <!-- 打赏 START -->
     
+      <div class="money-like">
+        <div class="reward-btn">
+          赏
+          <span class="money-code">
+            <span class="alipay-code">
+              <div class="code-image"></div>
+              <b>使用支付宝打赏</b>
+            </span>
+            <span class="wechat-code">
+              <div class="code-image"></div>
+              <b>使用微信打赏</b>
+            </span>
+          </span>
+        </div>
+        <p class="notice">若你觉得我的文章对你有帮助，欢迎点击上方按钮对我打赏</p>
+      </div>
+    
     <!-- 打赏 END -->
     <!-- 二维码 START -->
     
+      <div class="qrcode">
+        <canvas id="share-qrcode"></canvas>
+        <p class="notice">扫描二维码，分享此文章</p>
+      </div>
+    
     <!-- 二维码 END -->
     
-      <!-- No Comment -->
+      <!-- Utterances START -->
+      <div id="utterances"></div>
+      <script src="https://utteranc.es/client.js"
+        repo=""
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async></script>    
+      <!-- Utterances END -->
     
   </article>
   <!-- Article END -->
@@ -223,9 +319,9 @@
     }
     $('.header').removeClass('fixed-header')
 
-     // error image
+    // error image
     $(".markdown-content img").on('error', function() {
-      $(this).attr('src', 'http://file.muyutech.com/error-img.png')
+      $(this).attr('src', '/css/images/error_icon.png')
       $(this).css({
         'cursor': 'default'
       })
@@ -234,10 +330,10 @@
     // zoom image
     $(".markdown-content img").on('click', function() {
       var src = $(this).attr('src')
-      if (src !== 'http://file.muyutech.com/error-img.png') {
+      if (src !== '/css/images/error_icon.png') {
         var imageW = $(this).width()
         var imageH = $(this).height()
-        
+
         var zoom = ($(window).width() * 0.95 / imageW).toFixed(2)
         zoom = zoom < 1 ? 1 : zoom
         zoom = zoom > 2 ? 2 : zoom
@@ -257,64 +353,31 @@
         })
       }
     })
+  })();
+</script>
 
-    // qrcode
+
+  <script>
     var qr = new QRious({
       element: document.getElementById('share-qrcode'),
       value: document.location.href
     });
+  </script>
 
-    // gitment
-    var gitmentConfig = "";
-    if (gitmentConfig !== 'undefined') {
-      var gitment = new Gitment({
-        id: "cRFC",
-        owner: "",
-        repo: "",
-        oauth: {
-          client_id: "",
-          client_secret: ""
-        },
-        theme: {
-          render(state, instance) {
-            const container = document.createElement('div')
-            container.lang = "en-US"
-            container.className = 'gitment-container gitment-root-container'
-            container.appendChild(instance.renderHeader(state, instance))
-            container.appendChild(instance.renderEditor(state, instance))
-            container.appendChild(instance.renderComments(state, instance))
-            container.appendChild(instance.renderFooter(state, instance))
-            return container;
-          }
-        }
-      })
-      gitment.render(document.getElementById('comments'))
-    }
-  })();
-</script>
 
-<script>
-  var disqus_shortname = '';
-  
-  var disqus_url = 'http://yoursite.com/2018/09/16/cRFC/';
-  
-  (function(){
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//go.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-</script>
+
+
+
 
     <div class="scroll-top">
   <span class="arrow-icon"></span>
 </div>
     <footer class="app-footer">
   <p class="copyright">
-    &copy; 2020 | Proudly powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+    &copy; 2024 | Proudly powered by <a href="https://hexo.io" target="_blank">Hexo</a>
     <br>
-    Miehanav Studio
+    Theme by <a target="_blank" rel="noopener" href="https://github.com/yanm1ng">yanm1ng</a>
+    
   </p>
 </footer>
 
@@ -329,19 +392,20 @@
   }
 </script>
 <script>
-  async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+  async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
     FastClick.attach(document.body);
   })
 </script>
 
 <script>
   var hasLine = 'true';
-  async("//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js", function(){
+  async("//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js", function(){
     $('figure pre').each(function(i, block) {
       var figure = $(this).parents('figure');
       if (hasLine === 'false') {
         figure.find('.gutter').hide();
       }
+      hljs.configure({useBR: true});
       var lang = figure.attr('class').split(' ')[1] || 'code';
       var codeHtml = $(this).html();
       var codeTag = document.createElement('code');
@@ -355,6 +419,9 @@
 </script>
 <!-- Baidu Tongji -->
 
+
 <script src="/js/script.js"></script>
+
+
   </body>
 </html>
